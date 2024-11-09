@@ -1,0 +1,7 @@
+package com.cwiczenia;
+
+public class Animal {
+    void bark(){
+        System.out.println("Woof-Woof");
+    }
+}
