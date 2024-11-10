@@ -3,6 +3,7 @@ package cwiczenie1;
 public class Animal {
     private String breed;
     private String mammal;
+    protected int legs; //widoczne tylko dla podklas
 
     //Konstruktory
     public Animal(){
@@ -36,4 +37,10 @@ public class Animal {
         System.out.println("Woof-Woof");
     }
 
+    public void eat(){
+        System.out.println("Animal eats");
+    }
+    public int getLegs(){
+        return legs;
+    }
 }
