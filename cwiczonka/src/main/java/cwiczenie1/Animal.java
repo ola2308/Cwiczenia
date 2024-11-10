@@ -1,15 +1,15 @@
-package com.cwiczenia;
+package cwiczenie1;
 
 public class Animal {
     private String breed;
     private String mammal;
 
     //Konstruktory
-    Animal(){
+    public Animal(){
         this.setMammal("Dog");
     }
 
-    Animal(String m){
+    public Animal(String m){
         this.setMammal(m);
     }
 

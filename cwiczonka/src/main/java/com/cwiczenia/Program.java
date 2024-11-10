@@ -1,4 +1,5 @@
 package com.cwiczenia;
+import cwiczenie1.Animal;
 
 class Program{
     public static void main(String[] args){
