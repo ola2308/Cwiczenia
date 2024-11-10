@@ -33,14 +33,16 @@ public class Animal {
     public void setBreed(String b){
         this.breed = b;
     }
-    public void bark(){
-        System.out.println("Woof-Woof");
-    }
 
     public void eat(){
         System.out.println("Animal eats");
     }
     public int getLegs(){
         return legs;
+    }
+
+    //polimorfizm
+    public void makeSound(){
+        System.out.println("Grrr...");
     }
 }
