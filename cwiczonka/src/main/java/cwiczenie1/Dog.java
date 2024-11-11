@@ -9,4 +9,7 @@ public class Dog extends Animal{
     public void makeSound(){
         System.out.println("Woof");
     }
+    public void onlyDog(){
+        System.out.println("Only here");
+    }
 }
