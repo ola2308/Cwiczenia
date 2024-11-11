@@ -46,4 +46,11 @@ public class Animal {
     public void makeSound(){
         System.out.println("Grrr...");
     }
+
+    public enum Mammal1{
+        DOG,
+        CAT,
+        MONKEY,
+        RABBIT
+    }
 }

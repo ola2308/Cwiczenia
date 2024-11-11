@@ -1,12 +1,20 @@
 package com.cwiczenia;
 import cwiczenie1.Animal;
+import cwiczenie1.Animal.Mammal1;
 import cwiczenie1.Cat;
 import cwiczenie1.Dog;
 import cwiczenie1.PrzeciazanieMetod;
 import cwiczenie2.Machine;
+import cwiczenie2.Math1;
 import cwiczenie2.Robot;
+import cwiczenie3.HashMap1;
+import cwiczenie3.Loader;
+import cwiczenie3.Loader1;
+;
 
 
+//Usuwa importy jeśli nie są użyte.
+/* Java API: https://docs.oracle.com/javase/7/docs/api/ */
 
 
 class Program{
@@ -64,5 +72,55 @@ class Program{
         System.out.println(d3.name==d4.name); // te same obiekty, z tą samą wartością, wskazują na ten sam obiekt w pamięci 
         System.out.println(d3.equals(d4)); //metoda equals z Dog.java, do testowania równości semantycznej
 
+        Animal.Mammal1 m1 = Mammal1.MONKEY;
+        switch(m1){
+            case DOG:
+            System.out.println("Doggy");
+            break;
+            case CAT:
+            System.out.println("Kitty");
+            break;
+            case MONKEY:
+            System.out.println("Monkeeey");
+            break;
+            case RABBIT:
+            System.out.println("Rabbit");
+            break;
+        }
+
+        /*Scanner scanner = new Scanner(System.in);
+        System.out.println("Write here index of item you would like to get : ");
+	    int choice = scanner.nextInt();
+	    
+	    String[] categories = {"PCs", "Notebooks", "Tablets", "Phones", "Аccessories"};
+	    
+	    //wyjatki
+	    try {
+			System.out.println(categories[choice]);
+	    } catch(Exception e) {
+	        System.out.println("An error occurred");
+	    }
+            */
+
+        //wyjątki z metody Math1.java
+        //System.out.println(Math1.div(17,0));
+        System.out.println(Math1.div(16,4));
+       // Math1.div();
+
+
+
+
+
+
+       //Rozszerzenie klasy Thread
+       Loader obj = new Loader();
+       obj.start();
+
+       //Implementacja interfejsu Runnable
+       Thread t = new Thread(new Loader1());
+       t.start();
+
+       //LinkedList1.List();
+       HashMap1.HashMap1();
     }
 }
