@@ -3,7 +3,7 @@ import cwiczenie1.Animal;
 import cwiczenie1.Cat;
 import cwiczenie1.Dog;
 import cwiczenie1.PrzeciazanieMetod;
-
+import cwiczenie2.Machine;
 
 class Program{
     public static void main(String[] args){
