@@ -5,6 +5,7 @@ public class Animal {
     private String mammal;
     protected int legs; //widoczne tylko dla podklas
 
+
     //Konstruktory
     public Animal(){
         this.setMammal("Dog");
