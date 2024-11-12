@@ -1,4 +1,5 @@
 package cwiczenie3;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Scanner;
 
@@ -17,9 +18,13 @@ public class LinkedList1 {
         }
         System.out.println("Enough from you, let's give you longer words back: ");
         for(int i=0;i<words.size();i++){
-            if(words.get(i).length()>4){
-                System.out.println(words.get(i));
+            if(words.get(i).length()<4){
+                words.remove(i);
             }
         }
+
+        //Sortowanie alfabetyczne
+        Collections.sort(words);
+        System.out.println(words);
     }
 }

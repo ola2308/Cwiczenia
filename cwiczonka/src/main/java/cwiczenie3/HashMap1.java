@@ -31,6 +31,7 @@ public class HashMap1 {
                 ages.remove(emp,age);
             }
         }
+
         System.out.println(ages);
 
 

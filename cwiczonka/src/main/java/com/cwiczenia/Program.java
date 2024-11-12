@@ -1,4 +1,5 @@
 package com.cwiczenia;
+
 import cwiczenie1.Animal;
 import cwiczenie1.Animal.Mammal1;
 import cwiczenie1.Cat;
@@ -7,10 +8,14 @@ import cwiczenie1.PrzeciazanieMetod;
 import cwiczenie2.Machine;
 import cwiczenie2.Math1;
 import cwiczenie2.Robot;
+import cwiczenie3.Files;
 import cwiczenie3.HashMap1;
+import cwiczenie3.It;
+import cwiczenie3.LinkedList1;
 import cwiczenie3.Loader;
 import cwiczenie3.Loader1;
-;
+
+
 
 
 //Usuwa importy jeśli nie są użyte.
@@ -120,7 +125,11 @@ class Program{
        Thread t = new Thread(new Loader1());
        t.start();
 
-       //LinkedList1.List();
-       HashMap1.HashMap1();
+        LinkedList1.List();
+        HashMap1.HashMap1();
+
+        It.It();
+
+       Files.File();
     }
 }
