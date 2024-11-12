@@ -1,5 +1,8 @@
 package com.cwiczenia;
 
+import java.util.Formatter;
+import java.util.Scanner;
+
 import cwiczenie1.Animal;
 import cwiczenie1.Animal.Mammal1;
 import cwiczenie1.Cat;
@@ -14,7 +17,6 @@ import cwiczenie3.It;
 import cwiczenie3.LinkedList1;
 import cwiczenie3.Loader;
 import cwiczenie3.Loader1;
-
 
 
 
@@ -130,6 +132,18 @@ class Program{
 
         It.It();
 
+        Scanner input = new Scanner(System.in);
+        try{
+            Formatter f = new Formatter("C:\\Users\\olani\\Desktop\\test.txt");
+            int count =0;
+            while(count<5){
+                f.format(input.next());
+                count++;
+            }
+            f.close();
+        }catch(Exception e){
+            System.out.println("Error");
+        }
        Files.File();
     }
 }
